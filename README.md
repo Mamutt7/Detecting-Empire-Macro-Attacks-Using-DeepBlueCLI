@@ -1,4 +1,4 @@
-# Red-Blue Exercise Report
+# Detecting Empire/Starkiller windows_launcher_vbs attacks using DeepBlueCLI and Windowsevntvwr
 
 ## 1. Empire Setup on Ubuntu
 ![Empire Ready](https://github.com/user-attachments/assets/715bac52-ed66-4abf-8b9d-ebbf85d83253)
